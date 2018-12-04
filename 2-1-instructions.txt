@@ -1,0 +1,64 @@
+--- Day 2: Inventory Management System ---
+
+---Puzzle 1---
+
+
+**'filtered' instructions**
+---------------------------
+
+1) Scan the likely candidate box IDs (the puzzle input), counting the number that have an ID containing exactly two of any letter. (Test 1)
+
+2) separately count those with exactly three of any letter. (Test 2)
+
+3) Multiply those two counts together to get a rudimentary checksum (the puzzle answer)
+ 
+Note!: I initially thought I had to look for characters that were repeated *next to each other*, but it is just if they are repeated somewhere in the string.
+
+
+**Examples**
+------------
+
+For example, if you see the following box IDs:
+
+abcdef    contains no letters that appear exactly two or three times.
+(No to both tests)
+
+bababc    contains two a and three b, so it counts for both.
+(Yes to both tests)
+
+abbcde    contains two b, but no letter appears exactly three times.
+(Yes to Test 1)
+
+abcccd    contains three c, but no letter appears exactly two times.
+(Yes to  Test 2)
+
+aabcdd    contains two a and two d, but it only counts once.
+(Yes to Test 1 - but should only appear once in the results list for this test.)
+
+abcdee    contains two e.
+(Yes to test 1)
+
+ababab    contains three a and three b, but it only counts once.
+(Yes to Test 2 - but should only appear once in the results list for this test.)
+
+
+Of these box IDs, four of them contain a letter which appears exactly twice, and three of them contain a letter which appears exactly three times. Multiplying these together produces a checksum of 4 * 3 = 12.
+
+We only need to carry out each test on each ID once; e.g. for Test 1, if we two of the same letter in an ID then we don't look for another in the same ID.  
+
+
+The example input IDs and the 'real' input IDs are of different lengths.
+
+
+The example inputs as a simple list (list of 7 box IDs):
+
+abcdef
+bababc
+abbcde
+abcccd
+aabcdd
+abcdee
+ababab
+
+
+

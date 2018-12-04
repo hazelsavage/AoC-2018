@@ -1,0 +1,31 @@
+--- Part Two ---
+
+There are two boxes with IDs that meet the following criteria: 
+
+The boxes will have IDs which differ by exactly one character at the same position in both strings.
+
+
+**To get the puzzle answer:**
+-------------------------
+
+What (string of?) letters are common between the two correct box IDs?
+
+(In the example below, this is found by removing the differing character from either ID, producing 'fgij'.)
+
+
+For example, given the following box IDs:
+
+abcde
+fghij
+klmno
+pqrst
+fguij
+axcye
+wvxyz
+
+The IDs 'abcde' and 'axcye' are similar, but differ by two characters: the second(b/x) and fourth(d/y).
+
+The IDs 'fghij' and 'fguij' differ by exactly one character: the third (h/u). Therefore those must be the correct pair of boxes.
+
+
+

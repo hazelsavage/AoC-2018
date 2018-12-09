@@ -1,0 +1,14 @@
+
+---Day 3---
+---Part Two---
+
+There is exactly one claim that doesn't overlap -by even a single square inch of fabric- with any other claim.
+
+For example, in the example claims given, only 'claim 3' is intact after all claims are made.
+
+
+**To get the puzzle answer:**
+-------------------------
+
+What is the ID of the only claim that doesn't overlap?
+

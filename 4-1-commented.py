@@ -1,11 +1,3 @@
-#Puzzle 2: Of all guards, which guard is most frequently asleep on the same minute?
-
-#In the example, Guard #99 spent minute 45 asleep more than any other guard or minute - three times in total.
-#(In all other cases, any guard spent any minute asleep at most twice.)
-
-#What is the ID of that guard multiplied by that minute?
-
-
 import re
 from datetime import datetime, date, time, timedelta	#import some datetime modules so we can deal with the dates and times in the records.
 from copy import copy					#I can't honestly remember what we need 'copy' for, maybe nothing.
